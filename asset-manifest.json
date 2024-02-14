@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mantra-counter/static/css/main.59766d71.css",
+    "main.js": "/mantra-counter/static/js/main.4f041e9c.js",
+    "static/js/592.30bb4dea.chunk.js": "/mantra-counter/static/js/592.30bb4dea.chunk.js",
+    "index.html": "/mantra-counter/index.html",
+    "main.59766d71.css.map": "/mantra-counter/static/css/main.59766d71.css.map",
+    "main.4f041e9c.js.map": "/mantra-counter/static/js/main.4f041e9c.js.map",
+    "592.30bb4dea.chunk.js.map": "/mantra-counter/static/js/592.30bb4dea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59766d71.css",
+    "static/js/main.4f041e9c.js"
+  ]
+}
