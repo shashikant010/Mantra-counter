@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 export default function Counter() {
     const [count, setCount] = useState(0);
-
     useEffect(() => {
         const a = document.querySelector('.box');
         const b = document.querySelector('button');

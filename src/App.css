@@ -61,3 +61,10 @@ button{
 .hide{
   display:none;
 }
+.aud{
+  text-align: center;
+  width: 100%;
+}
+audio{
+  width: 80%;             ;
+}
