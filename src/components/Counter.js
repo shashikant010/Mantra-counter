@@ -34,7 +34,7 @@ export default function Counter() {
                 <button style={{ padding:'20px', fontSize:'50px', fontWeight:'700' }}>click</button>
             </div>
             <div className='congo hide'>
-                Congratulations You have completed 101 repetition!!!!
+               <p>Congratulations You have completed 101 repetition!!!!</p> 
             </div>
         </>
     );
