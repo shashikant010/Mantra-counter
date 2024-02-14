@@ -6,7 +6,7 @@ export default function Counter() {
         const a = document.querySelector('.box');
         const b = document.querySelector('button');
         const congo = document.querySelector('.congo');
-        let isPlaying=false;
+        // let isPlaying=false;
 
         const handleKey = (e) => {
         if(e.key===" "){
@@ -20,16 +20,16 @@ export default function Counter() {
                 return newCount;
             }});
           }
-          if(e.key==="p"){
-            if(!isPlaying){
-            document.querySelector('audio').play();
-        isPlaying=true;
-        }
-            else{
-                document.querySelector('audio').pause(); 
-                isPlaying=false;
-            }
-          }
+        //   if(e.key==="p"){
+        //     if(!isPlaying){
+        //     document.querySelector('audio').play();
+        // isPlaying=true;
+        // }
+        //     else{
+        //         document.querySelector('audio').pause(); 
+        //         isPlaying=false;
+        //     }
+        //   }
         
         };
 

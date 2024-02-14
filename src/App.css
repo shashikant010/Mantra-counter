@@ -32,6 +32,11 @@ h1{
   text-align: center;
   
 }
+
+.mantra{
+  background-color: rgba(255, 255, 255, 0.566);
+}
+
 p{
   margin: 10px;
 }
