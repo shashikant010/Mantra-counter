@@ -7,7 +7,8 @@ export default function Counter() {
         const b = document.querySelector('button');
         const congo = document.querySelector('.congo');
 
-        const handleKey = () => {
+        const handleKey = (e) => {
+        if(e.key===" "){
             setCount(prevCount => {
                 const newCount = prevCount + 1;
                 a.innerText = newCount;
@@ -16,6 +17,7 @@ export default function Counter() {
                 }
                 return newCount;
             });
+        }
         };
 
         document.addEventListener('keydown', handleKey);
