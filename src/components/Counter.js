@@ -10,14 +10,16 @@ export default function Counter() {
         const handleKey = (e) => {
         if(e.key===" "){
             setCount(prevCount => {
+                if(prevCount<101){
                 const newCount = prevCount + 1;
                 a.innerText = newCount;
-                if (newCount > 101) {
+                if (newCount >= 101) {
                     congo.classList.remove('hide');
                 }
                 return newCount;
-            });
-        }
+            }});
+          }
+        
         };
 
         document.addEventListener('keydown', handleKey);
