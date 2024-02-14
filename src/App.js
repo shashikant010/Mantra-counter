@@ -5,7 +5,8 @@ import Mantra from './components/Mantra';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App ">
+      <div className="bgimg"></div>
       <h1>Mantra counter</h1>
       <Mantra/>
       <Counter/>
