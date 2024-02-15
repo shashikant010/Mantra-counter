@@ -20,24 +20,26 @@ export default function Counter() {
                 return newCount;
             }});
           }
-        //   if(e.key==="p"){
-        //     if(!isPlaying){
-        //     document.querySelector('audio').play();
-        // isPlaying=true;
-        // }
-        //     else{
-        //         document.querySelector('audio').pause(); 
-        //         isPlaying=false;
-        //     }
-        //   }
-        
+         
         };
+        const handleClick=()=>{
+            setCount(prevCount => {
+                if(prevCount<101){
+                const newCount = prevCount + 1;
+                a.innerText = newCount;
+                if (newCount >= 101) {
+                    congo.classList.remove('hide');
+                }
+                return newCount;
+            }});
+          }
+        
 
         document.addEventListener('keydown', handleKey);
-        b.addEventListener('click', handleKey);
+        b.addEventListener('click', handleClick);
         return () => {
             document.removeEventListener('keydown', handleKey);
-            b.removeEventListener('click', handleKey);
+            b.removeEventListener('click', handleClick);
         };
     }, []);
 
