@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/Mantra-counter/static/css/main.5795c6f3.css",
-    "main.js": "/Mantra-counter/static/js/main.5c6d63cb.js",
+    "main.css": "/Mantra-counter/static/css/main.69c77151.css",
+    "main.js": "/Mantra-counter/static/js/main.9f696492.js",
     "static/js/592.30bb4dea.chunk.js": "/Mantra-counter/static/js/592.30bb4dea.chunk.js",
+    "static/media/ganeshArti.mp3": "/Mantra-counter/static/media/ganeshArti.0cb66fd733738a4b59f7.mp3",
     "static/media/gm.mp3": "/Mantra-counter/static/media/gm.4801fadb49fa1720215b.mp3",
     "static/media/ss.jpg": "/Mantra-counter/static/media/ss.4f1e6113851920fc7032.jpg",
     "static/media/aarti.png": "/Mantra-counter/static/media/aarti.87c6ecfc7411344a0b1f.png",
+    "static/media/ganesh.png": "/Mantra-counter/static/media/ganesh.47cf94cf40e4b6e1d360.png",
     "static/media/favicon.ico": "/Mantra-counter/static/media/favicon.ab9259f06c28e6ef2256.ico",
     "index.html": "/Mantra-counter/index.html",
-    "main.5795c6f3.css.map": "/Mantra-counter/static/css/main.5795c6f3.css.map",
-    "main.5c6d63cb.js.map": "/Mantra-counter/static/js/main.5c6d63cb.js.map",
+    "main.69c77151.css.map": "/Mantra-counter/static/css/main.69c77151.css.map",
+    "main.9f696492.js.map": "/Mantra-counter/static/js/main.9f696492.js.map",
     "592.30bb4dea.chunk.js.map": "/Mantra-counter/static/js/592.30bb4dea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5795c6f3.css",
-    "static/js/main.5c6d63cb.js"
+    "static/css/main.69c77151.css",
+    "static/js/main.9f696492.js"
   ]
 }
