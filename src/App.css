@@ -2,6 +2,9 @@
   margin: 0px;
   padding: 0px;
 }
+body{
+  background-color:tan;           
+}
 .bgimg{
   background-image: url("ss.jpg");
   position: absolute; 
@@ -14,6 +17,9 @@
 h1{
   text-align: center;
   margin: 20px;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .box{
   height:20vh;
@@ -71,5 +77,53 @@ button{
   width: 100%;
 }
 audio{
-  width: 80%;             ;
+  width: 80%;             
+}
+
+.boxes{
+  height: 40vh;
+  min-width: 30%;
+  max-width: 35%;
+  background-color:white;
+  margin: 40px;
+  border-radius: 10px;
+}
+
+.boxes:hover{
+  background-color:rgba(255, 255, 255, 0.785);
+
+}
+
+h2{
+  text-align: center;
+  padding: 10px;
+
+}
+.boxes img{
+  margin: 10px;
+  height: 90px;
+  width: 70px;
+  animation:big 3s ease-in-out 0s 1;
+  animation-fill-mode: forwards  ;
+}
+
+h3{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+@keyframes big{
+  0%{
+    height: 90px;
+    width: 70px;
+  }
+  50%{
+    height:110px;
+    width: 90px;
+  }
+  100%{
+    height:130px;
+    width: 110px;
+  }
 }
