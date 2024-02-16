@@ -6,8 +6,8 @@ export default function Aarti() {
     <div>
       <h1>Aarti Section</h1>
       <div className="container">
-        <Aartibox/>
-        <Aartibox/>
+        <Aartibox link={'/player/ganesh'} title={'Ganesh Aarti'}/>
+        <Aartibox link={'/player/hanumaan'} title={'Hanumaan Aarti'}/>
         <Aartibox/>
         <Aartibox/>
         <Aartibox/>

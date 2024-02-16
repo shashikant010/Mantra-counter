@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import ganesharti from '../music/ganeshArti.mp3'
 import ganesh from '../images/ganesh.png'
 
-export default function Player() {
+export default function Player(props) {
   let play=true;
+  let like=false;
    const handleplay=()=>{
     if(play===true){
       document.querySelector('audio').pause(); 
@@ -16,7 +16,7 @@ export default function Player() {
       document.querySelector('.play').innerText='⏸';
     }
    }
-   let like=false;
+   
    useEffect(()=>{
     const handlelike=()=>{
       if(like===false){
@@ -35,13 +35,13 @@ export default function Player() {
    })
   return (
     <div className='Player'>
-      <div className="bg" style={{backgroundImage:`url(${ganesh})`,height:'100vh',width:'100%'}}>
+      <div className="bg" style={{backgroundImage:`url(${props.image})`,height:'100vh',width:'100%'}}>
     
       </div>
       <div className="icon">
-      <div className='like'><i class="fa-solid fa-thumbs-up"></i>     </div>
-      <div className='comment'><i class="fa-solid fa-comment"></i>   </div>
-      <div className='share'><i class="fa-solid fa-share"></i>   </div>
+      <div className='like'><i className="fa-solid fa-thumbs-up"></i>     </div>
+      <div className='comment'><i className="fa-solid fa-comment"></i>   </div>
+      <div className='share'><i className="fa-solid fa-share"></i>   </div>
       </div>
       <div className="playbar">
         <button className="backw">
@@ -57,7 +57,7 @@ export default function Player() {
       </div>
       <div className="hide">
 
-        <audio src={ganesharti} autoPlay></audio>
+        <audio src={props.arti} autoPlay></audio>
 
       </div>
     </div>
