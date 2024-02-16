@@ -192,6 +192,9 @@ h3{
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  
   
 }
 .like{
@@ -199,10 +202,28 @@ h3{
     border: none ;
     background-color: rgba(255, 255, 255, 0);
     position: relative;
-    top: 10vh;
+    top: 20vh;
     color:white;
 }
 
+.comment{
+  font-size: 50px;
+  border: none ;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+  top: 25vh;
+  color:white;
+  right: 1;
+}
+.share{
+  font-size: 50px;
+  border: none ;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+  top: 30vh;
+  color:white;
+  right: 1;
+}
 
 @media screen and (max-width: 800px) {
   .boxes{

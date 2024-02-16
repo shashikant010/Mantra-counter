@@ -40,6 +40,8 @@ export default function Player() {
       </div>
       <div className="icon">
       <div className='like'><i class="fa-solid fa-thumbs-up"></i>     </div>
+      <div className='comment'><i class="fa-solid fa-comment"></i>   </div>
+      <div className='share'><i class="fa-solid fa-share"></i>   </div>
       </div>
       <div className="playbar">
         <button className="backw">
