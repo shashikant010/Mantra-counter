@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ganesharti from '../music/ganeshArti.mp3'
 import ganesh from '../images/ganesh.png'
 
@@ -16,6 +16,23 @@ export default function Player() {
       document.querySelector('.play').innerText='⏸';
     }
    }
+   let like=false;
+   useEffect(()=>{
+    const handlelike=()=>{
+      if(like===false){
+        document.querySelector('.like').style.color='blue';
+        like=true;
+      }
+      else{
+        document.querySelector('.like').style.color='white';
+        like=false;
+      }
+    }
+    document.querySelector('.like').addEventListener('click',handlelike);
+    return()=>{
+      document.querySelector('.like').addEventListener('click',handlelike);
+    }
+   })
   return (
     <div className='Player'>
       <div className="bg" style={{backgroundImage:`url(${ganesh})`,height:'100vh',width:'100%'}}>
