@@ -10,13 +10,18 @@ export default function HomePage() {
     <h3><span><Typewriter
                   loop
                   cursor
+                  // cursorColor='red'
                   cursorStyle="♥"
                   typeSpeed={60}
                   deleteSpeed={30}
                   delaySpeed={1000}
                   words={['All You Need','','for your pooja','','Is Here']}
-                /></span><span><Cursor/></span></h3>
+                /></span><span ><Cursor/></span></h3>
+    <div className="container">
     <Boxes title='MANTRA'/>
+    <Boxes title='Aarti'/>
+    <Boxes title='Chalisa'/>
+    </div>
 
     </div>
   )

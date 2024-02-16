@@ -82,8 +82,7 @@ audio{
 
 .boxes{
   height: 40vh;
-  min-width: 30%;
-  max-width: 35%;
+  min-width: 25vw;
   background-color:white;
   margin: 40px;
   border-radius: 10px;
@@ -91,11 +90,16 @@ audio{
 
 .boxes:hover{
   background-color:rgba(255, 255, 255, 0.785);
+ &.boxes img{
+  animation:big 3s ease-in-out 0s 1;
+  animation-fill-mode: forwards  ;
+ }
 
 }
 
 h2{
   text-align: center;
+  line-height: 10vh;
   padding: 10px;
 
 }
@@ -103,8 +107,7 @@ h2{
   margin: 10px;
   height: 90px;
   width: 70px;
-  animation:big 3s ease-in-out 0s 1;
-  animation-fill-mode: forwards  ;
+
 }
 
 h3{
@@ -118,12 +121,15 @@ h3{
     height: 90px;
     width: 70px;
   }
-  50%{
-    height:110px;
-    width: 90px;
-  }
+
   100%{
     height:130px;
     width: 110px;
   }
+}
+
+.container{
+  display: flex;
+  margin: 20px;
+  overflow: hidden;
 }
