@@ -1,24 +1,29 @@
 import { useState } from 'react';
 import './App.css';
-import Congo from './components/Congo';
-import Counter from './components/Counter';
 import Mantra from './components/Mantra';
-import Audio from './Audio';
+
 import HomePage from './HomePage';
+import { HashRouter,Link,Route,Routes } from 'react-router-dom'
 
 function App() {
   const [play,setplay]=useState("autoplay")
   return (
+    <HashRouter>
     <div className="App ">
-      <HomePage/>
-      {/* <div className="bgimg"></div> */}
-      {/* <h1>Mantra counter</h1> */}
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/Mantra' element={<Mantra/>}/>
 
-      {/* <Audio/> */}
+      {/**/}
+      {/*  */}
+
+      {/*  */}
       {/* <Mantra/> */}
-      {/* <Counter/> */}
+      {/*  */}
       {/* <Congo/> */}
+      </Routes>
     </div>
+    </HashRouter>
   );
 }
 
