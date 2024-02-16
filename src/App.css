@@ -133,3 +133,15 @@ h3{
   margin: 20px;
   overflow: hidden;
 }
+
+@media screen and (max-width: 800px) {
+  .boxes{
+    width: 80%;
+    height: 10%;
+
+  }
+  .container{
+    flex-direction: column;
+   
+  }
+}
