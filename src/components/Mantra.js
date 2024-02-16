@@ -1,5 +1,5 @@
 import React from 'react'
-import Audio from '../Audio'
+import Audio from './Audio'
 import Counter from './Counter'
 export default function Mantra() {
   return (

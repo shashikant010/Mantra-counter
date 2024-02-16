@@ -7,7 +7,7 @@ body{
         
 }
 .bgimg{
-  background-image: url("ss.jpg");
+  background-image: url("./images/ss.jpg");
   position: absolute; 
   height: 100%; 
   width: 100%; 
@@ -144,18 +144,7 @@ h3{
 }
 
 
-@media screen and (max-width: 800px) {
-  .boxes{
-    width: 80%;
-    height: 30%;
 
-  }
-  .container{
-   
-    flex-direction: column;
-   
-  }
-}
 
 .arti-box{
   height: 40%;
@@ -188,9 +177,10 @@ h3{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap:20px;
 
 }
-.play,.forw,.backw,.like{
+.play,.forw,.backw{
     font-size: 50px;
     border: none ;
     background-color: rgba(255, 255, 255, 0);
@@ -199,7 +189,37 @@ h3{
 .icon{
   height: 100vh;
   width: 50vh;
-  background-color: rgba(0, 0, 0, 0.457);
+  background-color: rgba(0, 0, 0, 0);
   position: absolute;
   right: 0;
+  
+}
+.like{
+  font-size: 50px;
+    border: none ;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    top: 10vh;
+    color:white;
+}
+
+
+@media screen and (max-width: 800px) {
+  .boxes{
+    width: 80%;
+    height: 30%;
+
+  }
+  .container{
+   
+    flex-direction: column;
+   
+  }
+  .icon{
+    width:8vh;
+  }
+}
+
+.hide{
+  display: none;
 }

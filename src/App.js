@@ -3,7 +3,7 @@ import './App.css';
 import Mantra from './components/Mantra';
 import Aarti from './components/Aarti';
 
-import HomePage from './HomePage';
+import HomePage from './components/HomePage';
 import { HashRouter,Route,Routes } from 'react-router-dom'
 import Player from './components/Player';
 
