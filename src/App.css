@@ -1,9 +1,10 @@
 *{
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 body{
-  background-color:tan;           
+  background-color:tan; 
+        
 }
 .bgimg{
   background-image: url("ss.jpg");
@@ -80,18 +81,32 @@ audio{
   width: 80%;             
 }
 
+
+.container{
+  display: flex;
+  margin: 0%;
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  gap: 0px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .boxes{
-  height: 40vh;
-  min-width: 25vw;
-  background-color:white;
-  margin: 40px;
+  height: 60%;
+  width: 38vh;
+  background-color: white;
+  margin: 6%;
   border-radius: 10px;
 }
 
 .boxes:hover{
   background-color:rgba(255, 255, 255, 0.785);
  &.boxes img{
-  animation:big 3s ease-in-out 0s 1;
+  animation:big 1s ease-in-out 0s 1;
   animation-fill-mode: forwards  ;
  }
 
@@ -128,20 +143,63 @@ h3{
   }
 }
 
-.container{
-  display: flex;
-  margin: 20px;
-  overflow: hidden;
-}
 
 @media screen and (max-width: 800px) {
   .boxes{
     width: 80%;
-    height: 10%;
+    height: 30%;
 
   }
   .container{
+   
     flex-direction: column;
    
   }
+}
+
+.arti-box{
+  height: 40%;
+  width: 33vh;
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  line-height: 25vh;
+  margin: 20px;
+}
+
+
+.bg{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  filter: blur(3px); 
+  z-index: -1; 
+}
+
+.playbar{
+  height: 70px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.63);
+  position: absolute;
+  bottom: 0 ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.play,.forw,.backw,.like{
+    font-size: 50px;
+    border: none ;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.icon{
+  height: 100vh;
+  width: 50vh;
+  background-color: rgba(0, 0, 0, 0.457);
+  position: absolute;
+  right: 0;
 }
