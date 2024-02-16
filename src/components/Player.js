@@ -1,8 +1,8 @@
 import React from 'react'
 import ganesharti from '../music/ganeshArti.mp3'
+import ganesh from '../images/ganesh.png'
 
 export default function Player() {
-   let img='https://c0.klipartz.com/pngpicture/314/305/gratis-png-senor-ganesha-shiva-ganesha-parvati-deidad-ganesh-thumbnail.png'
   let play=true;
    const handleplay=()=>{
     if(play===true){
@@ -18,7 +18,7 @@ export default function Player() {
    }
   return (
     <div className='Player'>
-      <div className="bg" style={{backgroundImage:`url(${img})`,height:'100vh',width:'100%'}}>
+      <div className="bg" style={{backgroundImage:`url(${ganesh})`,height:'100vh',width:'100%'}}>
     
       </div>
       <div className="icon">
