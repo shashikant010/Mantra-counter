@@ -21,7 +21,7 @@ function App() {
   // let ganesharti='https://drive.google.com/file/d/14udaeeOCQbfT7KTm7gyePJtcKWbYfAxT/view?usp=drive_link';
   return (
     <HashRouter>
-      {/* <Navbar/> */}
+      <Navbar/>
     <div className="App ">
       <Routes>
         <Route path='/' element={<HomePage/>}/>
