@@ -278,6 +278,14 @@ h3{
   height: 8vh;
   width: 100vw;
   background-color: rgb(225, 187, 114);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar .shankh img{
+  height: 7vh ;
+  margin-right: 10px;
 }
 
 
@@ -328,7 +336,7 @@ h3{
   }
   .thali{
     height: 60vh;
-    width: 80vh;
+    width: 60vh;
     top: 20vh;
     left: 0vh;
     background-color: rgba(0, 0, 0, 0);
