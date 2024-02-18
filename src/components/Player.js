@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import ganesh from '../images/ganesh.png'
+import Lyrics from './Lyrics';
+import pujathali from '../images/puja-thali.png'
 
 export default function Player(props) {
   let play=true;
@@ -34,6 +35,8 @@ export default function Player(props) {
     }
    })
   return (
+    
+    <div className="playerbox">
     <div className='Player'>
       <div className="bg" style={{backgroundImage:`url(${props.image})`,height:'100vh',width:'100%'}}>
     
@@ -61,5 +64,13 @@ export default function Player(props) {
 
       </div>
     </div>
+    <div className="thali">
+      <img src={pujathali} />
+    </div>
+    <div className="lyrics">
+      <Lyrics/>
+    </div>
+    </div>
+    
   )
 }

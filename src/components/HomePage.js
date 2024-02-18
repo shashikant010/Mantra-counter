@@ -6,7 +6,7 @@ export default function HomePage() {
   const s=" ";
   return (
     <div>
-      <h1><img src={favicon} alt="img" height='30px' />&nbsp;SKY-ASTHA &nbsp;<img src={favicon} alt="img" height='30px' /> </h1>
+      
     <h3><span><Typewriter
                   loop
                   cursor

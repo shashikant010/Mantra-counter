@@ -22,6 +22,15 @@ h1{
   font-optical-sizing: auto;
   font-style: normal;
 }
+.Navbar h1{
+  
+    text-align: center;
+    margin: 0px;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  
+}
 .box{
   height:20vh;
   width:20vh;
@@ -131,6 +140,13 @@ h3{
   color: white;
 }
 
+.playerbox{
+  height: 100vh;
+}
+.player{
+  height: 100vh;
+}
+
 @keyframes big{
   0%{
     height: 90px;
@@ -202,7 +218,7 @@ h3{
     border: none ;
     background-color: rgba(255, 255, 255, 0);
     position: relative;
-    top: 20vh;
+    top: 30vh;
     color:white;
 }
 
@@ -211,7 +227,7 @@ h3{
   border: none ;
   background-color: rgba(255, 255, 255, 0);
   position: relative;
-  top: 25vh;
+  top: 35vh;
   color:white;
   right: 1;
 }
@@ -220,10 +236,81 @@ h3{
   border: none ;
   background-color: rgba(255, 255, 255, 0);
   position: relative;
-  top: 30vh;
+  top: 40vh;
   color:white;
   right: 1;
 }
+
+
+
+.hide{
+  display: none;
+}
+
+.lyrics{
+  position: relative;
+  top:100vh;
+  text-align: center;
+  padding: 5vh;
+  font-weight: 700;
+}
+.lyrics-text{
+  text-align: center;
+}
+.thali{
+  height: 60vh;
+  width: 90vh;
+  top: 20vh;
+  left:65vh;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  animation: rotate 4s infinite ease-in-out;
+}
+.thali img{
+  height: 30vh;
+  width: 30vh;
+  position: relative;
+  animation: counter-rotate 4s infinite ease-in-out;
+  /* transform: translate(0, 50%); */
+}
+
+.Navbar{
+  height: 8vh;
+  width: 100vw;
+  background-color: rgb(225, 187, 114);
+}
+
+
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes counter-rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 800px) {
   .boxes{
@@ -239,8 +326,13 @@ h3{
   .icon{
     width:8vh;
   }
-}
-
-.hide{
-  display: none;
+  .thali{
+    height: 60vh;
+    width: 80vh;
+    top: 20vh;
+    left: 0vh;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    animation: rotate 4s infinite ease-in-out;
+  }
 }
