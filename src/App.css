@@ -172,6 +172,8 @@ h3{
   align-items: center;
   line-height: 25vh;
   margin: 20px;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 
@@ -263,7 +265,7 @@ h3{
   height: 60vh;
   width: 90vh;
   top: 20vh;
-  left:46vh;
+  left:48vh;
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
   animation: rotate 4s infinite ease-in-out;
@@ -309,6 +311,11 @@ h3{
   }
 }
 
+
+Link,a{
+  color: black;
+  text-decoration:none;
+}
 
 
 

@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom'
 
 export default function Aartibox(props) {
   return (
+    <Link to={props.link} >
       <div className="arti-box">
-        <Link to={props.link} >{props.title }   </Link>           
+        {props.title }              
       </div>
+      </Link>
    
   )
 }
