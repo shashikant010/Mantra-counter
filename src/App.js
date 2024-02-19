@@ -15,7 +15,8 @@ import ganesharti from './music/ganeshArti.mp3'
 import hanumaanaarti from './music/hanuman.mp3'
 
 //Lyrics
-import Lyrics from './components/Lyrics';
+import Ganesh from './Aarties/Ganesh';
+import Hanumaan from './Aarties/Hanumaan';
 
 function App() {
   // let ganesharti='https://drive.google.com/file/d/14udaeeOCQbfT7KTm7gyePJtcKWbYfAxT/view?usp=drive_link';
@@ -27,8 +28,8 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/Mantra' element={<Mantra/>}/>
         <Route path='/Aarti' element={<Aarti/>}/>
-        <Route path='/player/ganesh' element={<Player arti={ganesharti} image={ganeshji}/>}/>
-          <Route path='/player/hanumaan' element={<Player arti={hanumaanaarti} image={hanumaaanji} lyrics={<Lyrics/>}/>}/>
+        <Route path='/player/ganesh' element={<Player arti={ganesharti} image={ganeshji} lyrics={<Ganesh/>}/>}/>
+          <Route path='/player/hanumaan' element={<Player arti={hanumaanaarti} image={hanumaaanji} lyrics={<Hanumaan/>}/>}/>
 
    
       </Routes>

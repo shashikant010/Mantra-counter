@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
-import favicon from '../favicon.ico'
+import React from 'react'
 import Boxes from './Boxes.js'  
-import { Cursor,useTypewriter,Typewriter } from 'react-simple-typewriter'        
+import { Cursor,Typewriter } from 'react-simple-typewriter'        
 export default function HomePage() {
-  const s=" ";
   return (
     <div>
       

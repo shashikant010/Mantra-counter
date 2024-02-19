@@ -1,5 +1,6 @@
 import React from 'react'
 import Aartibox from './Aarti-box'
+import Ganesh from '../Aarties/Ganesh'
 
 export default function Aarti() {
   return (

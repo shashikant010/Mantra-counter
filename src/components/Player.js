@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Lyrics from './Lyrics';
 import pujathali from '../images/puja-thali.png'
 
 export default function Player(props) {
@@ -78,7 +77,7 @@ export default function Player(props) {
       <img src={pujathali} alt="thali" />
     </div>
     <div className="lyrics">
-      <Lyrics/>
+     {props.lyrics}
     </div>
     </div>
     

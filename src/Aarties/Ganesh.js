@@ -1,8 +1,9 @@
 import React from 'react'
 
-export default function Lyrics() {
+export default function Ganesh() {
   return (
-    <div className='lyrics-text'>
+    <div>
+          <div className='lyrics-text'>
     <h2>Ganesh aarti</h2>
     <p>जय गणेश जय गणेश, जय गणेश देवा। माता जाकी पार्वती पिता महादेवा॥</p>
     <p>एक दंत दयावंत, चार भुजा धारी। माथे सिंदूर सोहे, मूसे की सवारी॥</p>
@@ -15,6 +16,7 @@ export default function Lyrics() {
     <p>जय गणेश जय गणेश, जय गणेश देवा। माता जाकी पार्वती पिता महादेवा॥</p>
     <p>दीनन की लाज रखो, शंभु सुतकारी। कामना को पूर्ण करो जाऊं बलिहारी॥ </p>
     <p>जय गणेश जय गणेश, जय गणेश देवा। माता जाकी पार्वती पिता महादेवा॥</p>
+    </div>
     </div>
   )
 }
