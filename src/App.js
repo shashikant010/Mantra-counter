@@ -5,6 +5,7 @@ import HomePage from './components/HomePage';
 import { HashRouter,Route,Routes } from 'react-router-dom'
 import Player from './components/Player';
 import Navbar from './components/Navbar';
+import ChalisaPlayer from './components/ChalisaPlayer';
 
 //images
 import ganeshji from './images/ganesh.png'
@@ -17,6 +18,7 @@ import hanumaanaarti from './music/hanuman.mp3'
 //Lyrics
 import Ganesh from './Aarties/Ganesh';
 import Hanumaan from './Aarties/Hanumaan';
+import Chalisa from './components/Chalisa';
 
 function App() {
   // let ganesharti='https://drive.google.com/file/d/14udaeeOCQbfT7KTm7gyePJtcKWbYfAxT/view?usp=drive_link';
@@ -28,9 +30,14 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/Mantra' element={<Mantra/>}/>
         <Route path='/Aarti' element={<Aarti/>}/>
-        <Route path='/player/ganesh' element={<Player arti={ganesharti} image={ganeshji} lyrics={<Ganesh/>}/>}/>
-          <Route path='/player/hanumaan' element={<Player arti={hanumaanaarti} image={hanumaaanji} lyrics={<Hanumaan/>}/>}/>
+        <Route path='/Chalisa' element={<Chalisa/>}/>
 
+        <Route path='/player/ganesh' element={<Player arti={ganesharti} image={ganeshji} lyrics={<Ganesh/>}/>}/>
+        <Route path='/player/hanumaan' element={<Player arti={hanumaanaarti} image={hanumaaanji} lyrics={<Hanumaan/>}/>}/>
+
+
+        <Route path='/player/chalisa/hanumaan' element={<ChalisaPlayer arti={hanumaanaarti} image={hanumaaanji} lyrics={<Hanumaan/>}/>}/>
+       
    
       </Routes>
     </div>
