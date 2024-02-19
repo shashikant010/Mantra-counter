@@ -3,23 +3,28 @@ import Lyrics from './Lyrics';
 import pujathali from '../images/puja-thali.png'
 
 export default function Player(props) {
-  let play=true;
-  let like=false;
-   const handleplay=()=>{
-    if(play===true){
-      document.querySelector('audio').pause(); 
-      play=false;
-      document.querySelector('.play').innerText='⏯';
-    }
-    else{
-      document.querySelector('audio').play(); 
-      play=true;
-      document.querySelector('.play').innerText='⏸';
-    }
-   }
-   
+
    useEffect(()=>{
+   
+    let like=false;
+    let play=true;
+    const handleplay=()=>{
+     if(play===true){
+       console.log("audio is off")
+       document.querySelector('.arti audio').pause(); 
+       play=false;
+       document.querySelector('.play').innerText='⏯';
+     }
+     else{
+       console.log("audio is on")
+       document.querySelector('.arti audio').play(); 
+       play=true;
+       document.querySelector('.play').innerText='⏸';
+     }
+    }
+    
     const handlelike=()=>{
+      console.log("like is clicked")
       if(like===false){
         document.querySelector('.like').style.color='blue';
         like=true;
@@ -29,9 +34,12 @@ export default function Player(props) {
         like=false;
       }
     }
+    document.querySelector('.play').addEventListener('click',handleplay);
     document.querySelector('.like').addEventListener('click',handlelike);
     return()=>{
-      document.querySelector('.like').addEventListener('click',handlelike);
+      document.querySelector('.like').removeEventListener('click',handlelike);
+    document.querySelector('.play').removeEventListener('click',handleplay);
+
     }
    })
   return (
@@ -50,7 +58,7 @@ export default function Player(props) {
         <button className="backw">
         ⏮
         </button>
-        <button className="play" onClick={handleplay}>
+        <button className="play" >
         ⏸
         </button>
         <button className="forw">
@@ -58,14 +66,14 @@ export default function Player(props) {
         </button>
         
       </div>
-      <div className="hide">
+      <div className="hide arti">
 
         <audio src={props.arti} autoPlay></audio>
 
       </div>
     </div>
     <div className="thali">
-      <img src={pujathali} />
+      <img src={pujathali} alt="thali" />
     </div>
     <div className="lyrics">
       <Lyrics/>
