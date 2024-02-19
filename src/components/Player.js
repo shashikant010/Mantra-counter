@@ -37,8 +37,10 @@ export default function Player(props) {
     document.querySelector('.play').addEventListener('click',handleplay);
     document.querySelector('.like').addEventListener('click',handlelike);
     return()=>{
+      if(document.querySelector('.play') || document.querySelector('.like')){
       document.querySelector('.like').removeEventListener('click',handlelike);
     document.querySelector('.play').removeEventListener('click',handleplay);
+      }
 
     }
    })
