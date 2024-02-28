@@ -11,10 +11,10 @@ export default function Counter() {
         const handleKey = (e) => {
         if(e.key===" "){
             setCount(prevCount => {
-                if(prevCount<101){
+                if(prevCount<108){
                 const newCount = prevCount + 1;
                 a.innerText = newCount;
-                if (newCount >= 101) {
+                if (newCount >= 108) {
                     congo.classList.remove('hide');
                 }
                 return newCount;
@@ -24,10 +24,10 @@ export default function Counter() {
         };
         const handleClick=()=>{
             setCount(prevCount => {
-                if(prevCount<101){
+                if(prevCount<108){
                 const newCount = prevCount + 1;
                 a.innerText = newCount;
-                if (newCount >= 101) {
+                if (newCount >= 108) {
                     congo.classList.remove('hide');
                 }
                 return newCount;
@@ -46,11 +46,13 @@ export default function Counter() {
     return (
         <>
             <div className='box'></div>
+            <p style={{color:'white',backgroundColor:"black",fontSize:"20px",textAlign:"center"}}>Read the matra 108 times to get your wishes fulfilled</p>
             <div className="but" style={{ margin:'30px' }}>
                 <button style={{ padding:'20px', fontSize:'50px', fontWeight:'700' }}>click</button>
+                <p style={{color:'white',backgroundColor:"black",fontSize:"20px"}}>click the button to increase count</p>
             </div>
             <div className='congo hide'>
-               <p>Congratulations You have completed 101 repetition!!!!</p> 
+               <p>Congratulations You have completed 108 repetition!!!!</p> 
             </div>
         </>
     );
