@@ -46,10 +46,10 @@ export default function Counter() {
     return (
         <>
             <div className='box'></div>
-            <p style={{color:'white',backgroundColor:"black",fontSize:"20px",textAlign:"center"}}>Read the matra 108 times to get your wishes fulfilled</p>
             <div className="but" style={{ margin:'30px' }}>
+            <p>Read the matra 108 times to get your wishes fulfilled</p>
                 <button style={{ padding:'20px', fontSize:'50px', fontWeight:'700' }}>click</button>
-                <p style={{color:'white',backgroundColor:"black",fontSize:"20px"}}>click the button to increase count</p>
+                <p>click the button to increase count</p>
             </div>
             <div className='congo hide'>
                <p>Congratulations You have completed 108 repetition!!!!</p> 

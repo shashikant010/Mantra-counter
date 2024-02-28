@@ -318,6 +318,13 @@ Link,a{
   text-decoration:none;
 }
 
+.but p{
+  color: white;
+  background-color:rgba(0, 0, 0, 0.416);
+  font-size:20px;
+  text-align:center
+}
+
 
 
 
