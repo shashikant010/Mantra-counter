@@ -28,7 +28,7 @@ export default function Audio() {
   return (
     <div>
             <div className="aud">
-      <audio controls autoPlay loop>
+      <audio controls loop>
   <source src={gm} type="audio/mpeg"/>
 Your browser does not support the audio element.
 </audio>

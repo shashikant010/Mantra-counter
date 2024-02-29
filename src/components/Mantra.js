@@ -7,7 +7,7 @@ export default function Mantra() {
   
   <div className="bgimg"></div>
   <h1>Mantra counter</h1>
-  <Audio/>
+  <Audio />
     <div className='mantra' style={{textAlign:'center',fontSize:'30px',margin:'20px',fontWeight:'700'}}>
         
 <p>ॐ भूर् भुवः स्वः।</p>
