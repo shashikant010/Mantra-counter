@@ -22,16 +22,43 @@ export default function Counter() {
           }
          
         };
+
         const handleClick=()=>{
-            setCount(prevCount => {
-                if(prevCount<108){
-                const newCount = prevCount + 1;
-                a.innerText = newCount;
-                if (newCount >= 108) {
-                    congo.classList.remove('hide');
+                var recognition = new window.webkitSpeechRecognition();
+                recognition.lang="en-GB";
+                document.querySelector(".but p").innerHTML+="<br>I am Listening"
+                recognition.onresult=(evt)=>{
+                    let result=evt.results[0][0].transcript;
+                    console.log(result);
+                    console.log(result[0]+result[1]);
+                    if(result[0]+result[1]==="Om"||result[0]+result[1]==="ओम"){
+                        setCount(prevCount => {
+                            if(prevCount<108){
+                            const newCount = prevCount + 1;
+                            a.innerText = newCount;
+                            if (newCount >= 108) {
+                                congo.classList.remove('hide');
+                            }
+                            return newCount;
+                        }});
+                    }
                 }
-                return newCount;
-            }});
+                recognition.start();
+                recognition.onend=()=>{
+                    recognition.start(); 
+                }
+            
+
+
+            // setCount(prevCount => {
+            //     if(prevCount<108){
+            //     const newCount = prevCount + 1;
+            //     a.innerText = newCount;
+            //     if (newCount >= 108) {
+            //         congo.classList.remove('hide');
+            //     }
+            //     return newCount;
+            // }});
           }
         
 
@@ -48,7 +75,7 @@ export default function Counter() {
             <div className='box'></div>
             <div className="but" style={{ margin:'30px' }}>
             <p>Read the matra 108 times to get your wishes fulfilled</p>
-                <button style={{ padding:'20px', fontSize:'50px', fontWeight:'700' }}>click</button>
+                <button style={{ padding:'20px', fontSize:'50px', fontWeight:'700' }}>click to Start</button>
                 <p>click the button to increase count</p>
             </div>
             <div className='congo hide'>
