@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Mantra-counter/static/css/main.22095c52.css",
-    "main.js": "/Mantra-counter/static/js/main.5da28ff3.js",
+    "main.js": "/Mantra-counter/static/js/main.cfc095cf.js",
     "static/js/592.30bb4dea.chunk.js": "/Mantra-counter/static/js/592.30bb4dea.chunk.js",
     "static/media/hanuman.mp3": "/Mantra-counter/static/media/hanuman.a7e2e5fb417840e923aa.mp3",
     "static/media/ganeshArti.mp3": "/Mantra-counter/static/media/ganeshArti.0cb66fd733738a4b59f7.mp3",
@@ -15,11 +15,11 @@
     "static/media/favicon.ico": "/Mantra-counter/static/media/favicon.ab9259f06c28e6ef2256.ico",
     "index.html": "/Mantra-counter/index.html",
     "main.22095c52.css.map": "/Mantra-counter/static/css/main.22095c52.css.map",
-    "main.5da28ff3.js.map": "/Mantra-counter/static/js/main.5da28ff3.js.map",
+    "main.cfc095cf.js.map": "/Mantra-counter/static/js/main.cfc095cf.js.map",
     "592.30bb4dea.chunk.js.map": "/Mantra-counter/static/js/592.30bb4dea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.22095c52.css",
-    "static/js/main.5da28ff3.js"
+    "static/js/main.cfc095cf.js"
   ]
 }
